@@ -24,9 +24,9 @@ INIT_VERSION=3
 
 KCPTUN_INSTALL_DIR='/usr/local/kcptun'
 KCPTUN_LOG_DIR='/var/log/kcptun'
-KCPTUN_RELEASES_URL='https://api.github.com/repos/xtaci/kcptun/releases'
+KCPTUN_RELEASES_URL='https://api.github.com/repos/tobycroft/kcptun/releases'
 KCPTUN_LATEST_RELEASE_URL="${KCPTUN_RELEASES_URL}/latest"
-KCPTUN_TAGS_URL='https://github.com/xtaci/kcptun/tags'
+KCPTUN_TAGS_URL='https://github.com/tobycroft/kcptun/tags'
 
 BASE_URL='https://github.com/kuoruan/shell-scripts/raw/master/kcptun'
 SHELL_VERSION_INFO_URL="${BASE_URL}/version.json"

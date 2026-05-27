@@ -1,16 +1,7 @@
 #!/bin/sh
 
 : <<-'EOF'
-Copyright 2017-2019 Xingwang Liao <kuoruan@gmail.com>
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-	http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Fixed
 EOF
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -28,7 +19,7 @@ KCPTUN_RELEASES_URL='https://api.github.com/repos/tobycroft/kcptun/releases'
 KCPTUN_LATEST_RELEASE_URL="${KCPTUN_RELEASES_URL}/latest"
 KCPTUN_TAGS_URL='https://github.com/tobycroft/kcptun/tags'
 
-BASE_URL='https://github.com/kuoruan/shell-scripts/raw/master/kcptun'
+BASE_URL='https://github.com/tobycroft/shell-scripts/raw/master/kcptun'
 SHELL_VERSION_INFO_URL="${BASE_URL}/version.json"
 
 JQ_DOWNLOAD_URL="https://github.com/stedolan/jq/releases/download/jq-1.5/"
@@ -87,12 +78,6 @@ clear
 cat >&1 <<-'EOF'
 #########################################################
 # Kcptun 服务端一键安装脚本                             #
-# 该脚本支持 Kcptun 服务端的安装、更新、卸载及配置      #
-# 脚本作者: Index <kuoruan@gmail.com>                   #
-# 作者博客: https://blog.kuoruan.com/                   #
-# Github: https://github.com/kuoruan/shell-scripts      #
-# QQ交流群: 43391448, 68133628                          #
-#           633945405                                   #
 #########################################################
 EOF
 
@@ -2555,11 +2540,7 @@ do_install() {
 	Kcptun 服务端会随 Supervisor 的启动而启动
 
 	更多使用说明: ${0} help
-
-	如果这个脚本帮到了你，你可以请作者喝瓶可乐:
-	  https://blog.kuoruan.com/donate
-
-	享受加速的快感吧！
+	
 	EOF
 }
 

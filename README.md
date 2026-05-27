@@ -1,6 +1,6 @@
 # Linux Shell Scripts
 
-一些 Linux 脚本
+这是一个主要用来加速端口的脚本，通过KCP协议，让TCP可以在UDP层中传输，来解决云厂商虚拟机跨网访问可能存在的速率问题，借助https://github.com/tobycroft/kcptun ，项目降低云厂商部署端口时的难度
 
 ```sh
 $ tree
@@ -15,14 +15,14 @@ $ tree
 * Ubuntu：
 ```sh
 apt install python-is-python3 -y
-wget --no-check-certificate -O kcptun.sh https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh
+wget --no-check-certificate -O kcptun.sh https://github.com/tobycroft/shell-scripts/raw/master/kcptun/kcptun.sh
 sh kcptun.sh
 ```
 
 
 * 其他Linux安装命令：
 ```sh
-wget --no-check-certificate -O kcptun.sh https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh
+wget --no-check-certificate -O kcptun.sh https://github.com/tobycroft/shell-scripts/raw/master/kcptun/kcptun.sh
 sh kcptun.sh
 ```
 
@@ -57,17 +57,3 @@ Kcptun 相关命令:
                   {启动|关闭|重启|查看状态}
 ```
 
-## OpenVZ BBR 一键安装脚本
-
-* 安装命令：
-
-```sh
-wget --no-check-certificate -O ovz-bbr-installer.sh https://github.com/kuoruan/shell-scripts/raw/master/ovz-bbr/ovz-bbr-installer.sh
-sh ovz-bbr-installer.sh
-```
-
-* 卸载命令
-
-```sh
-sh ovz-bbr-installer.sh uninstall
-```

@@ -2,6 +2,8 @@
 
 这是一个主要用来加速端口的脚本，通过KCP协议，让TCP可以在UDP层中传输，来解决云厂商虚拟机跨网访问可能存在的速率问题，借助https://github.com/tobycroft/kcptun ，项目降低云厂商部署端口时的难度
 
+本版只是修复了不可用问题
+
 ```sh
 $ tree
 ├── kcptun
